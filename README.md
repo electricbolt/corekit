@@ -1,7 +1,6 @@
 ## CoreKit
 
-Models, UI and other neat stuff for Swift apps
-Supports Swift 5, Xcode 10.2 and above.
+Models, UI and other neat stuff for Swift apps. Supports Swift 5, Xcode 10.2 and above.
 
 ### Models
 
