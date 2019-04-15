@@ -1,6 +1,6 @@
 /*******************************************************************************
  * DecimalNumberBuilder.swift                                                  *
- * commons/money Copyright© 2019; Electric Bolt Limited.                       *
+ * CoreKit Copyright© 2019; Electric Bolt Limited.                             *
  ******************************************************************************/
 
 import Foundation
