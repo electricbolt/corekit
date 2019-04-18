@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4EBCBFE522642AC9001F809D /* CoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBCBFE322642AC9001F809D /* CoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC2360422680B3C0061C1DA /* DecimalNumberBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360222680B380061C1DA /* DecimalNumberBuilderTests.swift */; };
+		4EC2360C22680B4D0061C1DA /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360622680B4D0061C1DA /* MoneyTests.swift */; };
+		4EC2360D22680B4D0061C1DA /* MoneyFormatterAccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360722680B4D0061C1DA /* MoneyFormatterAccessibilityTests.swift */; };
+		4EC2360E22680B4D0061C1DA /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360822680B4D0061C1DA /* CurrencyTests.swift */; };
+		4EC2360F22680B4D0061C1DA /* CurrencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360922680B4D0061C1DA /* CurrencyManagerTests.swift */; };
+		4EC2361022680B4D0061C1DA /* MoneyFormatterFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360A22680B4D0061C1DA /* MoneyFormatterFormattingTests.swift */; };
+		4EC2361122680B4D0061C1DA /* MoneyFormatterParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360B22680B4D0061C1DA /* MoneyFormatterParsingTests.swift */; };
 		4ECF091422642B57009A352A /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091022642B57009A352A /* CurrencyManager.swift */; };
 		4ECF091522642B57009A352A /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091122642B57009A352A /* MoneyFormatter.swift */; };
 		4ECF091622642B57009A352A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091222642B57009A352A /* Currency.swift */; };
@@ -15,14 +22,7 @@
 		4ECF091922642B69009A352A /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091822642B69009A352A /* String+Subscript.swift */; };
 		4ECF093122642D2D009A352A /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBCBFE022642AC9001F809D /* CoreKit.framework */; };
 		4ECF093722642D35009A352A /* StringSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091A22642B71009A352A /* StringSubscriptTests.swift */; };
-		4ECF093822642D35009A352A /* CurrencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091E22642B7D009A352A /* CurrencyManagerTests.swift */; };
-		4ECF093922642D35009A352A /* MoneyFormatterAccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF092022642B7D009A352A /* MoneyFormatterAccessibilityTests.swift */; };
-		4ECF093A22642D35009A352A /* MoneyFormatterFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091C22642B7D009A352A /* MoneyFormatterFormattingTests.swift */; };
-		4ECF093B22642D35009A352A /* MoneyFormatterParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091D22642B7D009A352A /* MoneyFormatterParsingTests.swift */; };
-		4ECF093C22642D35009A352A /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF091F22642B7D009A352A /* MoneyTests.swift */; };
-		4ECF093D22642D4F009A352A /* DecimalNumberBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF092622642B85009A352A /* DecimalNumberBuilderTests.swift */; };
 		4ECF093F22642E08009A352A /* DecimalNumberBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF093E22642E08009A352A /* DecimalNumberBuilder.swift */; };
-		4ECF094122646FF8009A352A /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF094022646FF8009A352A /* CurrencyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +39,22 @@
 		4EBCBFE022642AC9001F809D /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBCBFE322642AC9001F809D /* CoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreKit.h; sourceTree = "<group>"; };
 		4EBCBFE422642AC9001F809D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC2360222680B380061C1DA /* DecimalNumberBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalNumberBuilderTests.swift; sourceTree = "<group>"; };
+		4EC2360622680B4D0061C1DA /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		4EC2360722680B4D0061C1DA /* MoneyFormatterAccessibilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterAccessibilityTests.swift; sourceTree = "<group>"; };
+		4EC2360822680B4D0061C1DA /* CurrencyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
+		4EC2360922680B4D0061C1DA /* CurrencyManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManagerTests.swift; sourceTree = "<group>"; };
+		4EC2360A22680B4D0061C1DA /* MoneyFormatterFormattingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterFormattingTests.swift; sourceTree = "<group>"; };
+		4EC2360B22680B4D0061C1DA /* MoneyFormatterParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterParsingTests.swift; sourceTree = "<group>"; };
 		4ECF091022642B57009A352A /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
 		4ECF091122642B57009A352A /* MoneyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
 		4ECF091222642B57009A352A /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		4ECF091322642B57009A352A /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		4ECF091822642B69009A352A /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		4ECF091A22642B71009A352A /* StringSubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSubscriptTests.swift; sourceTree = "<group>"; };
-		4ECF091C22642B7D009A352A /* MoneyFormatterFormattingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterFormattingTests.swift; sourceTree = "<group>"; };
-		4ECF091D22642B7D009A352A /* MoneyFormatterParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterParsingTests.swift; sourceTree = "<group>"; };
-		4ECF091E22642B7D009A352A /* CurrencyManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManagerTests.swift; sourceTree = "<group>"; };
-		4ECF091F22642B7D009A352A /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
-		4ECF092022642B7D009A352A /* MoneyFormatterAccessibilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyFormatterAccessibilityTests.swift; sourceTree = "<group>"; };
-		4ECF092622642B85009A352A /* DecimalNumberBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalNumberBuilderTests.swift; sourceTree = "<group>"; };
 		4ECF092C22642D2D009A352A /* CoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECF093022642D2D009A352A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ECF093E22642E08009A352A /* DecimalNumberBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalNumberBuilder.swift; sourceTree = "<group>"; };
-		4ECF094022646FF8009A352A /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyTests.swift; path = ../../../../../corekit/CoreKit/Model/internal/tests/CurrencyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +105,31 @@
 			path = CoreKit;
 			sourceTree = "<group>";
 		};
+		4EC2360122680B2E0061C1DA /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2360222680B380061C1DA /* DecimalNumberBuilderTests.swift */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		4EC2360522680B440061C1DA /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2360922680B4D0061C1DA /* CurrencyManagerTests.swift */,
+				4EC2360822680B4D0061C1DA /* CurrencyTests.swift */,
+				4EC2360722680B4D0061C1DA /* MoneyFormatterAccessibilityTests.swift */,
+				4EC2360A22680B4D0061C1DA /* MoneyFormatterFormattingTests.swift */,
+				4EC2360B22680B4D0061C1DA /* MoneyFormatterParsingTests.swift */,
+				4EC2360622680B4D0061C1DA /* MoneyTests.swift */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
 		4ECF090A22642B01009A352A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4ECF090F22642B49009A352A /* tests */,
+				4EC2360522680B440061C1DA /* tests */,
 				4ECF090E22642B42009A352A /* internal */,
 				4ECF091222642B57009A352A /* Currency.swift */,
 				4ECF091022642B57009A352A /* CurrencyManager.swift */,
@@ -135,36 +156,13 @@
 			path = tests;
 			sourceTree = "<group>";
 		};
-		4ECF090D22642B33009A352A /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				4ECF092622642B85009A352A /* DecimalNumberBuilderTests.swift */,
-			);
-			name = tests;
-			path = ../tests;
-			sourceTree = "<group>";
-		};
 		4ECF090E22642B42009A352A /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				4ECF090D22642B33009A352A /* tests */,
+				4EC2360122680B2E0061C1DA /* tests */,
 				4ECF093E22642E08009A352A /* DecimalNumberBuilder.swift */,
 			);
 			path = internal;
-			sourceTree = "<group>";
-		};
-		4ECF090F22642B49009A352A /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				4ECF094022646FF8009A352A /* CurrencyTests.swift */,
-				4ECF091E22642B7D009A352A /* CurrencyManagerTests.swift */,
-				4ECF092022642B7D009A352A /* MoneyFormatterAccessibilityTests.swift */,
-				4ECF091C22642B7D009A352A /* MoneyFormatterFormattingTests.swift */,
-				4ECF091D22642B7D009A352A /* MoneyFormatterParsingTests.swift */,
-				4ECF091F22642B7D009A352A /* MoneyTests.swift */,
-			);
-			name = tests;
-			path = internal/tests;
 			sourceTree = "<group>";
 		};
 		4ECF092D22642D2D009A352A /* CoreKitTests */ = {
@@ -297,14 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ECF093922642D35009A352A /* MoneyFormatterAccessibilityTests.swift in Sources */,
+				4EC2360D22680B4D0061C1DA /* MoneyFormatterAccessibilityTests.swift in Sources */,
+				4EC2360E22680B4D0061C1DA /* CurrencyTests.swift in Sources */,
+				4EC2360F22680B4D0061C1DA /* CurrencyManagerTests.swift in Sources */,
+				4EC2360422680B3C0061C1DA /* DecimalNumberBuilderTests.swift in Sources */,
+				4EC2361122680B4D0061C1DA /* MoneyFormatterParsingTests.swift in Sources */,
+				4EC2361022680B4D0061C1DA /* MoneyFormatterFormattingTests.swift in Sources */,
 				4ECF093722642D35009A352A /* StringSubscriptTests.swift in Sources */,
-				4ECF093B22642D35009A352A /* MoneyFormatterParsingTests.swift in Sources */,
-				4ECF093A22642D35009A352A /* MoneyFormatterFormattingTests.swift in Sources */,
-				4ECF094122646FF8009A352A /* CurrencyTests.swift in Sources */,
-				4ECF093D22642D4F009A352A /* DecimalNumberBuilderTests.swift in Sources */,
-				4ECF093822642D35009A352A /* CurrencyManagerTests.swift in Sources */,
-				4ECF093C22642D35009A352A /* MoneyTests.swift in Sources */,
+				4EC2360C22680B4D0061C1DA /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
