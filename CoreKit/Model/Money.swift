@@ -153,7 +153,7 @@ public struct Money {
 
     /**
      The amount of the Money object represented as a String. The returned string is formatted without prefix or
-     suffix or grouping seperators. e.g. "-2402.19". Use MoneyFormatter.format(amount:prefixSuffix:grouping:negative:fractional:)
+     suffix or grouping seperators. e.g. "-2402.19". Use MoneyFormatter.format(amount:prefixSuffix:grouping:negative:)
      method directly for alternate formats. Money objects that have unavailable amounts are returned as "".
      - returns: Textual representation of the amount or "" if unavailable amount.
      */
