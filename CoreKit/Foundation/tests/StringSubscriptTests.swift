@@ -550,4 +550,40 @@ class StringSubscriptTests: XCTestCase {
         XCTAssertEqual("Hello,\u{2665}", "Hello,\u{2665}\u{1f496}!".removeSuffix("\u{1f496}!"))
     }
 
+    func testLeft() {
+        XCTAssertEqual("", "".left(-1))
+        XCTAssertEqual("", "".left(0))
+        XCTAssertEqual("", "".left(1))
+        XCTAssertEqual("", "my dog has fleas".left(0))
+        XCTAssertEqual("m", "my dog has fleas".left(1))
+        XCTAssertEqual("my dog", "my dog has fleas".left(6))
+        XCTAssertEqual("my dog has fleas", "my dog has fleas".left(50))
+        
+        // Unicode characters. 2665=black heart (♥) 1f496=sparkling heart (💖)
+        XCTAssertEqual("Hello,", "Hello,\u{2665}\u{1f496}!".left(6))
+        XCTAssertEqual("Hello,\u{2665}", "Hello,\u{2665}\u{1f496}!".left(7))
+        XCTAssertEqual("Hello,\u{2665}\u{1f496}", "Hello,\u{2665}\u{1f496}!".left(8))
+        XCTAssertEqual("Hello,\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".left(9))
+        XCTAssertEqual("Hello,\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".left(10))
+        XCTAssertEqual("Hello,\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".left(50))
+    }
+
+    func testRight() {
+        XCTAssertEqual("", "".right(-1))
+        XCTAssertEqual("", "".right(0))
+        XCTAssertEqual("", "".right(1))
+        XCTAssertEqual("", "my dog has fleas".right(0))
+        XCTAssertEqual("s", "my dog has fleas".right(1))
+        XCTAssertEqual(" fleas", "my dog has fleas".right(6))
+        XCTAssertEqual("my dog has fleas", "my dog has fleas".left(50))
+        
+        // Unicode characters. 2665=black heart (♥) 1f496=sparkling heart (💖)
+        XCTAssertEqual("!", "Hello,\u{2665}\u{1f496}!".right(1))
+        XCTAssertEqual("\u{1f496}!", "Hello,\u{2665}\u{1f496}!".right(2))
+        XCTAssertEqual("\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".right(3))
+        XCTAssertEqual(",\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".right(4))
+        XCTAssertEqual("o,\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".right(5))
+        XCTAssertEqual("Hello,\u{2665}\u{1f496}!", "Hello,\u{2665}\u{1f496}!".right(50))
+    }
+
 }

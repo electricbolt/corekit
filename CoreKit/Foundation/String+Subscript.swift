@@ -164,6 +164,24 @@ public extension String {
     }
     
     /**
+     Returns a string object containing the `length` lefthand most characters of the receiver. If the length is out of
+     bounds, then the length is automatically repaired to be in bounds, with the returned string appropriately
+     adjusted. Example: "my dog has fleas".left(6) == "my dog"
+     */
+    func left(_ length: Int) -> String {
+        return self[..<length]
+    }
+    
+    /**
+     Returns a string object containing the `length` righthand most characters of the receiver. If the length is out of
+     bounds, then the length is automatically repaired to be in bounds, with the returned string appropriately
+     adjusted. Example: "my dog has fleas".left(5) == "fleas"
+     */
+    func right(_ length: Int) -> String {
+        return self[(self.count-length)...]
+    }
+    
+    /**
      If the receiver is longer than largestLength, the function splits the receiver into multiple strings of no more
      than splitLength. If the receiver is less than or equal to largestLength, then the string is returned as the sole
      array item. Returns an array of string objects. The behaviour of the function is undefined if splitLength >=
