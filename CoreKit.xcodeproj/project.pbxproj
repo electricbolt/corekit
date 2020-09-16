@@ -11,6 +11,7 @@
 		4E62BC85232F04DC005AF2E7 /* StringUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62BC83232F04BF005AF2E7 /* StringUtilitiesTests.swift */; };
 		4E62BC87232F0599005AF2E7 /* Data+Codec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62BC86232F0599005AF2E7 /* Data+Codec.swift */; };
 		4E62BC8A232F07EF005AF2E7 /* DataCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E62BC88232F07A1005AF2E7 /* DataCodecTests.swift */; };
+		4E6A33942512D45C00AD68FB /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A33932512D45C00AD68FB /* Package.swift */; };
 		4EBCBFE522642AC9001F809D /* CoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBCBFE322642AC9001F809D /* CoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EC2360422680B3C0061C1DA /* DecimalNumberBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360222680B380061C1DA /* DecimalNumberBuilderTests.swift */; };
 		4EC2360C22680B4D0061C1DA /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2360622680B4D0061C1DA /* MoneyTests.swift */; };
@@ -44,6 +45,7 @@
 		4E62BC83232F04BF005AF2E7 /* StringUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilitiesTests.swift; sourceTree = "<group>"; };
 		4E62BC86232F0599005AF2E7 /* Data+Codec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codec.swift"; sourceTree = "<group>"; };
 		4E62BC88232F07A1005AF2E7 /* DataCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCodecTests.swift; sourceTree = "<group>"; };
+		4E6A33932512D45C00AD68FB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		4EBCBFE022642AC9001F809D /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBCBFE322642AC9001F809D /* CoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreKit.h; sourceTree = "<group>"; };
 		4EBCBFE422642AC9001F809D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,9 +86,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6A33992512D66C00AD68FB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4ECF090C22642B2F009A352A /* tests */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4E6A339A2512D67A00AD68FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A339B2512D68A00AD68FB /* internal */,
+				4EC2360522680B440061C1DA /* tests */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E6A339B2512D68A00AD68FB /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				4EC2360122680B2E0061C1DA /* tests */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
 		4EBCBFD622642AC9001F809D = {
 			isa = PBXGroup;
 			children = (
+				4E6A33932512D45C00AD68FB /* Package.swift */,
 				4EBCBFE222642AC9001F809D /* CoreKit */,
 				4ECF092D22642D2D009A352A /* CoreKitTests */,
 				4EBCBFE122642AC9001F809D /* Products */,
@@ -137,7 +165,6 @@
 		4ECF090A22642B01009A352A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4EC2360522680B440061C1DA /* tests */,
 				4ECF090E22642B42009A352A /* internal */,
 				4ECF091222642B57009A352A /* Currency.swift */,
 				4ECF091022642B57009A352A /* CurrencyManager.swift */,
@@ -150,7 +177,6 @@
 		4ECF090B22642B11009A352A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				4ECF090C22642B2F009A352A /* tests */,
 				4ECF091822642B69009A352A /* String+Subscript.swift */,
 				4E62BC81232F0460005AF2E7 /* String+Utility.swift */,
 				4E62BC86232F0599005AF2E7 /* Data+Codec.swift */,
@@ -171,7 +197,6 @@
 		4ECF090E22642B42009A352A /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				4EC2360122680B2E0061C1DA /* tests */,
 				4ECF093E22642E08009A352A /* DecimalNumberBuilder.swift */,
 			);
 			path = internal;
@@ -180,6 +205,8 @@
 		4ECF092D22642D2D009A352A /* CoreKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				4E6A33992512D66C00AD68FB /* Foundation */,
+				4E6A339A2512D67A00AD68FB /* Model */,
 				4ECF093022642D2D009A352A /* Info.plist */,
 			);
 			path = CoreKitTests;
@@ -302,6 +329,7 @@
 				4ECF091922642B69009A352A /* String+Subscript.swift in Sources */,
 				4ECF093F22642E08009A352A /* DecimalNumberBuilder.swift in Sources */,
 				4ECF091522642B57009A352A /* MoneyFormatter.swift in Sources */,
+				4E6A33942512D45C00AD68FB /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
