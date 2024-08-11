@@ -51,18 +51,33 @@ public extension Data {
      */
 
     func hexEncodedString(options: HexEncodingOptions = []) -> String {
-        // Coded for speed and upto 34x faster than: `map { String(format: "%02hhx", $0) }.joined()`
-        let hexDigits = options.contains(.upperCase) ? Data.upperCaseHexDigits : Data.lowerCaseHexDigits
-        let buf = UnsafeMutablePointer<CChar>.allocate(capacity: count * 2)
-        var o = 0
-        for b in self {
-            let (hi, lo) = Int(b).quotientAndRemainder(dividingBy: 16)
-            buf[o] = hexDigits[hi]
-            o += 1
-            buf[o] = hexDigits[lo]
-            o += 1
+        if #available(macOS 11.0, iOS 14.0, watchOS 7.0, tvOS 14.0, *) {
+            // Coded for speed and upto 6x faster than: `map { String(format: "%02hhx", $0) }.joined()`
+            let hexDigits = options.contains(.upperCase) ? Data.upperCaseHexDigits : Data.lowerCaseHexDigits
+            var o = 0
+            return String(unsafeUninitializedCapacity: count * 2) { buf in
+                for b in self {
+                    let (hi, lo) = Int(b).quotientAndRemainder(dividingBy: 16)
+                    buf[o] = UInt8(hexDigits[hi])
+                    o += 1
+                    buf[o] = UInt8(hexDigits[lo])
+                    o += 1
+                }
+                return count * 2
+            }
+        } else {
+            // Coded for speed and upto 34x faster than: `map { String(format: "%02hhx", $0) }.joined()`
+            let hexDigits = options.contains(.upperCase) ? Data.upperCaseHexDigits : Data.lowerCaseHexDigits
+            var o = 0
+            let buf = UnsafeMutablePointer<CChar>.allocate(capacity: count * 2)
+            for b in self {
+                let (hi, lo) = Int(b).quotientAndRemainder(dividingBy: 16)
+                buf[o] = hexDigits[hi]
+                o += 1
+                buf[o] = hexDigits[lo]
+                o += 1
+            }
+            return String(bytesNoCopy: buf, length: count * 2, encoding: .utf8, freeWhenDone: true)!
         }
-        return String(bytesNoCopy: buf, length: count * 2, encoding: .utf8, freeWhenDone: true)!
     }
-
 }

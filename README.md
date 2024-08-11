@@ -1,6 +1,6 @@
 ## CoreKit
 
-Models, UI and other neat stuff for Swift apps. Supports Swift 5, Xcode 10.2 and above.
+Models, UI and other neat stuff for Swift apps. Supports Swift 5.10, Xcode 15.4, iOS 13.0 and above.
 
 ### Models
 
@@ -38,7 +38,8 @@ s = msg.removeSuffix("fleas")                   // s is now "my dog has "
 
 #### Data
 
-Extensions to Swift's Data struct to provide Hex encoding and decoding.
+Extensions to Swift's Data struct to provide Hex encoding and decoding. Coded for speed and between 6x to 34x faster than `map { String(format: "%02hhx", $0) }.joined()`
+
 
 > Swift example
 

@@ -46,7 +46,7 @@ class CurrencyManagerTests: XCTestCase {
     public func testList() {
         let manager = CurrencyManager()
         XCTAssertEqual(43, manager.list().count)
-        var list = manager.list()
+        let list = manager.list()
         for c in list {
             print(c)
         }
